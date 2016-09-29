@@ -72,7 +72,7 @@ class ParserWorker : public AsyncWorker {
       argv[1] = Null();
     }
 
-    if(result_.parse_tree) {
+    else if(result_.parse_tree) {
       v8::Local<v8::Object> hash = Nan::New<v8::Object>();
 
       Nan::Set(hash, Nan::New("query").ToLocalChecked(),
