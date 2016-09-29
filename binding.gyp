@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "queryparser",
-      "sources": [ "queryparser.cc" ],
+      "sources": [ "queryparser.cpp", "sync.cpp", "async.cpp" ],
       "include_dirs" : [
  	 			"<!(node -e \"require('nan')\")",
         "libpg_query/include"

@@ -47,7 +47,7 @@ describe('pg-query async', function() {
   });
 
   it('should not parse a bogus query', function() {
-    return query.parseQueryAsync("select null")
+    return query.parseQueryAsync("NOT A QUERY")
     .then(result => {
       assert(result, null);
     })
